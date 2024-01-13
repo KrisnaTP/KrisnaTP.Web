@@ -1,0 +1,151 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* HTML */
+
+html {
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 60%; 
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 960px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: white;
+    text-transform: uppercase;
+   
+}
+
+.container-item {
+    padding: 30px 30px;
+}
+
+.container-item:hover {
+    background-color: rgb(227, 223, 217);
+}
+
+.item-header {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(193, 189, 189);
+}
+
+.container-fitur {
+    border-top: 1px solid rgb(193, 189, 189) ;
+}
+
+.fitur-item {
+    border-bottom: 1px solid rgb(193, 189, 189);
+    padding: 25px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.harga {
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.button { 
+   background-color: cornflowerblue;
+   color: white;
+   border: 1px solid;
+   border-radius: 10px;
+   padding: 5px 10px;
+   text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: rgb(83, 126, 205);
+}
+
+@media screen and (min-width : 900px ){
+    
+   
+    .container {
+        display: flex;
+        flex-direction: row;
+    }  
+
+    .container-item {
+        border-right: 1px solid rgb(193, 189, 189);
+        border-right
+    }
+
+    .container-item:last-child {
+        border-right: none;
+    }
+    
+    
+}
